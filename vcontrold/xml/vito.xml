@@ -1,0 +1,980 @@
+<?xml version="1.0"?>
+<vito>
+  <devices>
+    <device ID="2098" name="V200KW2" protocol="KW2"/>
+    <device ID="2053" name="GWG_VBEM" protocol="GWG"/>
+    <device ID="20CB" name="VScotHO1" protocol="P300"/>
+    <device ID="2094" name="V200KW1" protocol="KW2"/>
+  </devices>
+  <commands>
+    <!-- BETRIEBSARTEN -->
+    <command name="getVitoBetriebsart" protocmd="getaddr">
+      <addr>2301</addr>
+      <len>1</len>
+      <unit>BA</unit>
+      <description>Betriebsart</description>
+    </command>
+
+    <!-- PARTYBETRIEB -->
+    <command name="getVitoBetriebParty" protocmd="getaddr">
+      <addr>2303</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Partybetrieb</description>
+    </command>
+    <command name="setVitoBetriebParty" protocmd="setaddr">
+      <addr>2303</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Setze Partybetrieb</description>
+    </command>
+    <command name="getVitoTempPartySoll" protocmd="getaddr">
+      <addr>2308</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Solltemperatur Partybetrieb in Grad C</description>
+    </command>
+    <command name="setVitoTempPartySoll" protocmd="setaddr">
+      <addr>2308</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Setze Raumsolltemperatur Partybetrieb in Grad C</description>
+    </command>
+
+    <!-- SPARBETRIEB (SPARSCHWEIN) -->
+    <command name="getVitoBetriebSpar" protocmd="getaddr">
+      <addr>2302</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Sparbetrieb</description>
+    </command>
+    <command name="setVitoBetriebSpar" protocmd="setaddr">
+      <addr>2302</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Setze Sparbetrieb</description>
+    </command>
+
+    <!-- FERIENBETRIEB -->
+
+    <!-- SOLLTEMPERATUREN -->
+    <command name="getVitoTempRaumNorSoll" protocmd="getaddr">
+      <addr>2306</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Raumsolltemperatur Normal in Grad C</description>
+    </command>
+    <!-- Aufruf in vclient ganzzahlig 'setVitoTempRaumNorSoll 21' -->
+    <command name="setVitoTempRaumNorSoll" protocmd="setaddr">
+      <addr>2306</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze Raumsolltemperatur Normal in Grad C</description>
+    </command>
+    <command name="getVitoTempRaumRedSoll" protocmd="getaddr">
+      <addr>2307</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Raumsolltemperatur reduzierter Betrieb in Grad C</description>
+    </command>
+    <command name="setVitoTempRaumRedSoll" protocmd="setaddr">
+      <addr>2307</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze Raumsolltemperatur reduzierter Betrieb in Grad C</description>
+    </command>
+
+    <!-- AUSSENTEMPERATUR -->
+    <command name="getVitoTempAussen" protocmd="getaddr">
+      <addr>0800</addr>
+      <len>2</len>
+      <unit>UT</unit>
+      <description>Aussentemperatur in Grad C</description>
+    </command>
+
+    <!-- WARMWASSER -->
+    <command name="getVitoTempWWIst" protocmd="getaddr">
+      <addr>0804</addr>
+      <len>2</len>
+      <unit>UT</unit>
+      <description>Warmwassertemperatur in Grad C</description>
+    </command>
+    <command name="getVitoTempWWSoll" protocmd="getaddr">
+      <addr>6300</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Warmwassersolltemperatur in Grad C</description>
+    </command>
+    <command name="setVitoTempWWSoll" protocmd="setaddr">
+      <addr>6300</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze Warmwassersolltemperatur in Grad C</description>
+    </command>
+
+    <!-- KESSEL -->
+    <command name="getVitoTempKesselIst" protocmd="getaddr">
+      <addr>0802</addr>
+      <len>2</len>
+      <unit>UT</unit>
+      <description>Vorlauf- bzw. Kesseltemperatur in Grad C</description>
+    </command>
+    <command name="getVitoTempKesselSoll" protocmd="getaddr">
+      <addr>555A</addr>
+      <len>2</len>
+      <unit>UT</unit>
+      <description>Vorlauf- bzw. Kesselsolltemperatur in Grad C</description>
+    </command>
+
+    <!-- BRENNER -->
+    <command name="getVitoBrennerStatus" protocmd="getaddr">
+      <addr>55D3</addr>
+      <len>1</len>
+      <unit>PR1</unit>
+      <description>Aktuelle Brennerleistung</description>
+    </command>
+    <command name="getVitoBrennerStarts" protocmd="getaddr">
+      <addr>088A</addr>
+      <len>4</len>
+      <unit>CO</unit>
+      <description>Brennerstarts</description>
+    </command>
+    <command name="getVitoBrennerStunden" protocmd="getaddr">
+      <addr>08A7</addr>
+      <len>4</len>
+      <unit>CS</unit>
+      <description>Brennerstunden</description>
+    </command>
+    <command name="getVitoLeistung" protocmd="getaddr">
+      <addr>A38F</addr>
+      <len>2</len>
+      <unit>PR3</unit>
+      <description>Aktuelle Leistung der Anlage</description>
+    </command>
+    <command name="getVitoTempAbgas" protocmd="getaddr">
+      <addr>0808</addr>
+      <len>2</len>
+      <unit>UT</unit>
+      <description>Abgastemperatur in Grad C</description>
+    </command>
+
+    <!-- HEIZKENNLINIE -->
+    <command name="getVitoKennlinieNeigung" protocmd="getaddr">
+      <addr>27D3</addr>
+      <unit>UN</unit>
+      <len>1</len>
+      <description>Neigung Heizkennlinie</description>
+    </command>
+    <command name="setVitoKennlinieNeigung" protocmd="setaddr">
+      <!-- min zul.0.2 0.1 und 0.0 nicht erlaubt -->
+      <addr>27D3</addr>
+      <unit>UN</unit>
+      <len>1</len>
+      <description>Setze Neigung Heizkennlinie</description>
+    </command>
+    <command name="getVitoKennlinieNiveau" protocmd="getaddr">
+      <addr>27D4</addr>
+      <unit>ST</unit>
+      <len>1</len>
+      <description>Niveau Heizkennlinie</description>
+    </command>
+    <command name="setVitoKennlinieNiveau" protocmd="setaddr">
+      <addr>27D4</addr>
+      <unit>ST</unit>
+      <len>1</len>
+      <description>Setze Niveau Heizkennlinie</description>
+    </command>
+
+    <!-- HEIZKREIS -->
+    <command name="getVitoTempVLIst" protocmd="getaddr">
+      <addr>2900</addr>
+      <unit>UT</unit>
+      <len>2</len>
+      <description>Vorlauftemperatur in Grad C</description>
+    </command>
+    <command name="getVitoTempVLSoll" protocmd="getaddr">
+      <addr>2544</addr>
+      <len>2</len>
+      <unit>UT</unit>
+      <description>Vorlaufsolltemperatur in Grad C</description>
+    </command>
+    <command name="getVitoTempRLIst" protocmd="getaddr">
+      <addr>0808</addr>
+      <len>2</len>
+      <unit>UT</unit>
+      <description>Ruecklauftemperatur in Grad C</description>
+    </command>
+    <command name="getVitoTempRaumHK" protocmd="getaddr">
+      <addr>0896</addr>
+      <len>2</len>
+      <unit>UTI</unit>
+      <description>Heizkreis Raumtemperatur in Grad C</description>
+    </command>
+    <command name="getVitoPumpeStatusHK" protocmd="getaddr">
+      <addr>2906</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Status Heizkreispumpe</description>
+    </command>
+    <!-- Wahrscheinlich nicht vorhanden -->
+    <command name="getVitoStatusPumpeSpeicher" protocmd="getaddr">
+      <addr>0845</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Status Speicherladepumpe</description>
+    </command>
+    <!-- Nicht vorhanden -->
+    <command name="getVitoStatusPumpeZirku" protocmd="getaddr">
+      <addr>0846</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Status Zirkulationspumpe</description>
+    </command>
+    <!-- Identisch mit HK-Pumpe? -->
+    <command name="getVitoStatusPumpeIntern" protocmd="getaddr">
+      <description>Status Interne Pumpe</description>
+      <addr>7660</addr>
+      <len>1</len>
+      <unit>RT</unit>
+    </command>
+
+    <!-- VENTILE -->
+    <command name="getVitoStatusUmschaltventil" protocmd="getaddr">
+      <addr>0A10</addr>
+      <len>1</len>
+      <unit>USV</unit>
+      <description>Status Umschaltventil Warmwasser/Heizen</description>
+    </command>
+
+    <!-- HEIZZEITEN -->
+    <!-- WARMWASSERZEITEN -->
+    <!-- ZIRKULATIONSZEITEN -->
+
+    <!-- STOERUNG -->
+    <command name="getVitoStatusStoerung" protocmd="getaddr">
+      <addr>0A82</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Status Störung</description>
+    </command>
+    <command name="getVitoStoerung1" protocmd="getaddr">
+      <addr>7507</addr>
+      <len>9</len>
+      <unit>ES</unit>
+      <description>Fehlerspeicher Eintrag 1</description>
+    </command>
+    <command name="getVitoStoerung2" protocmd="getaddr">
+      <addr>7510</addr>
+      <len>9</len>
+      <unit>ES</unit>
+      <description>Fehlerspeicher Eintrag 2</description>
+    </command>
+    <command name="getVitoStoerung3" protocmd="getaddr">
+      <addr>7519</addr>
+      <len>9</len>
+      <unit>ES</unit>
+      <description>Fehlerspeicher Eintrag 3</description>
+    </command>
+    <command name="getVitoStoerung4" protocmd="getaddr">
+      <addr>7522</addr>
+      <len>9</len>
+      <unit>ES</unit>
+      <description>Fehlerspeicher Eintrag 4</description>
+    </command>
+    <command name="getVitoStoerung5" protocmd="getaddr">
+      <addr>752B</addr>
+      <len>9</len>
+      <unit>ES</unit>
+      <description>Fehlerspeicher Eintrag 5</description>
+    </command>
+    <command name="getVitoStoerung6" protocmd="getaddr">
+      <addr>7534</addr>
+      <len>9</len>
+      <unit>ES</unit>
+      <description>Fehlerspeicher Eintrag 6</description>
+    </command>
+    <command name="getVitoStoerung7" protocmd="getaddr">
+      <addr>753D</addr>
+      <len>9</len>
+      <unit>ES</unit>
+      <description>Fehlerspeicher Eintrag 7</description>
+    </command>
+    <command name="getVitoStoerung8" protocmd="getaddr">
+      <addr>7546</addr>
+      <len>9</len>
+      <unit>ES</unit>
+      <description>Fehlerspeicher Eintrag 8</description>
+    </command>
+    <command name="getVitoStoerung9" protocmd="getaddr">
+      <addr>754F</addr>
+      <len>9</len>
+      <unit>ES</unit>
+      <description>Fehlerspeicher Eintrag 9</description>      
+    </command>
+    <command name="getVitoStoerung10" protocmd="getaddr">
+      <addr>7558</addr>
+      <len>9</len>
+      <unit>ES</unit>
+      <description>Fehlerspeicher Eintrag 10</description>
+    </command>
+
+    <!-- SYSTEMZEIT -->
+    <command name="getVitoSystemzeit" protocmd="getaddr">
+      <addr>088E</addr>
+      <len>8</len>
+      <unit>TI</unit>
+      <description>Systemzeit</description>
+    </command>
+    <command name="setVitoSystemzeit" protocmd="setaddr">
+      <addr>088E</addr>
+      <len>8</len>
+      <unit>TI</unit>
+      <description>Setze Systemzeit</description>
+    </command>
+
+    <!-- GERAETEDATEN -->
+    <command name="getVitoAnlagenschema" protocmd="getaddr">
+      <addr>7700</addr>
+      <len>2</len>
+      <unit>ST</unit>
+      <description>Anlagenschema</description>
+      <!-- K00_KonfiAnlagenschemaGWG_W (00) Heizkreis-Warmwasserschema Adresse
+           7700 1 A1 | 1 2 A1 + WW | 2 3 M2 | 3 4 M2 + WW | 4 5 A1 + M2 | 5 6 A1 + M2
+           + WW | 6 -->
+    </command>
+
+
+
+
+
+    <!-- HEIZZEITEN -->
+    <command name="getTimerM1Mo" protocmd="getaddr">
+      <addr>2000</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Montag M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM1Di" protocmd="getaddr">
+      <addr>2008</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Dienstag M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM1Mi" protocmd="getaddr">
+      <addr>2010</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit MIttwoch M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM1Do" protocmd="getaddr">
+      <addr>2018</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Donnerstag M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM1Fr" protocmd="getaddr">
+      <addr>2020</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Freitag M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM1Sa" protocmd="getaddr">
+      <addr>2028</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Samstag M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM1So" protocmd="getaddr">
+      <addr>2030</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Sonntag M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM2Mo" protocmd="getaddr">
+      <addr>3000</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Montag M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM2Di" protocmd="getaddr">
+      <addr>3008</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Dienstag M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM2Mi" protocmd="getaddr">
+      <addr>3010</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Mittwoch M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM2Do" protocmd="getaddr">
+      <addr>3018</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Donnerstag M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM2Fr" protocmd="getaddr">
+      <addr>3020</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Freitag M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM2Sa" protocmd="getaddr">
+      <addr>3028</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Samstag M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerM2So" protocmd="getaddr">
+      <addr>3030</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Sonntag M2</description>
+      <device ID="2053"/>
+    </command>
+
+    <!-- WARMWASSERZEITEN -->
+    <command name="getTimerWWMo" protocmd="getaddr">
+      <addr>2100</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Montag Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerWWDi" protocmd="getaddr">
+      <addr>2108</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Dienstag Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerWWMi" protocmd="getaddr">
+      <addr>2110</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Mittwoch Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerWWDo" protocmd="getaddr">
+      <addr>2118</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Donnerstag Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerWWFr" protocmd="getaddr">
+      <addr>2120</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Freitag Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerWWSa" protocmd="getaddr">
+      <addr>2128</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Samstag Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerWWSo" protocmd="getaddr">
+      <addr>2130</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Sonntag Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+
+    <!-- ZIRKULATIONSZEITEN -->
+    <command name="getTimerZirkuMo" protocmd="getaddr">
+      <addr>2200</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Montag Zirku</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerZirkuDi" protocmd="getaddr">
+      <addr>2208</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Dienstag Zirku</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerZirkuMi" protocmd="getaddr">
+      <addr>2210</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Mittwoch Zirku</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerZirkuDo" protocmd="getaddr">
+      <addr>2218</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Donnerstag Zirku</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerZirkuFr" protocmd="getaddr">
+      <addr>2220</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Freitag Zirku</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerZirkuSa" protocmd="getaddr">
+      <addr>2228</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Samstag Zirku</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTimerZirkuSo" protocmd="getaddr">
+      <addr>2230</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Sonntag Zirku</description>
+      <device ID="2053"/>
+    </command>
+
+ 
+    <!-- EXTERNES SPERREN und ANFORDERN -->
+    <command name="getEinflussExtSperren" protocmd="getaddr">
+      <addr>5732</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Einfluss Extern Sperren auf Pumpen</description>
+    </command>
+    <command name="getEinflussExtAnforderung" protocmd="getaddr">
+      <addr>5734</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Einfluss Externe Anforderung auf Pumpen</description>
+    </command>
+    <command name="getExtSperren" protocmd="getaddr">
+      <addr>0A81</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Ist Extern Sperren aktiv</description>
+    </command>
+    <command name="getExtAnforderung" protocmd="getaddr">
+      <addr>0A80</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Ist Externe Anforderung aktiv</description>
+    </command>
+    <!-- FROSTSCHUTZ -->
+    <command name="getStatusFrostM1" protocmd="getaddr">
+      <addr>2500</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Status Frostwarnung M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getStatusFrostM2" protocmd="getaddr">
+      <addr>3500</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Status Frostwarnung M2</description>
+      <device ID="2053"/>
+    </command>
+
+ 
+    <!-- KONFIGURATION UND SETZEN -->
+    <!-- xxx Heizkreispumpenlogik-Funktion xxx -->
+    <!-- A5:0 Ohne Heizkreispumpenlogik-Funktion Mit Heizkreispumpenlogik−Funktion:
+         Heizkreispumpe aus, wenn A5:1 AT > RTSoll + 5 K A5:2 AT > RTSoll + 4 K A5:3
+         AT > RTSoll + 3 K A5:4 AT > RTSoll + 2 K A5:5 AT > RTSoll + 1 K A5:6 AT =
+         RTSoll A5:7 AT > RTSoll -1 K bis A5:15 AT > RTSoll -9 K -->
+    <command name="getKA5" protocmd="getaddr">
+      <addr>27A5</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Ermittle die Heizkreispumpenlogik&#x2212;Funktion</description>
+      <!-- KA5_KonfSommersparSchaltschwelle A5 0x27a5 -->
+    </command>
+    <command name="setKA5" protocmd="setaddr">
+      <addr>27A5</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze die Heizkreispumpenlogik&#x2212;Funktion</description>
+      <!-- KA5_KonfSommersparSchaltschwelle A5 0x27a5 1Byte -->
+    </command>
+    <command name="getKA5M2" protocmd="getaddr">
+      <addr>37A5</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Ermittle die Heizkreispumpenlogik&#x2212;Funktion M2</description>
+      <!-- KA5_KonfSommersparSchaltschwelleM2 A5 0x37a5 -->
+    </command>
+    <command name="setKA5M2" protocmd="setaddr">
+      <addr>37A5</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze die Heizkreispumpenlogik&#x2212;Funktion M2</description>
+      <!-- KA5_KonfSommersparSchaltschwelleM2 A5 0x37a5 1Byte -->
+    </command>
+    <command name="getKA5M3" protocmd="getaddr">
+      <addr>47A5</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Ermittle die Heizkreispumpenlogik&#x2212;Funktion M3</description>
+      <!-- KA5_KonfSommersparSchaltschwelleM2 A5 0x47a5 -->
+    </command>
+    <command name="setKA5M3" protocmd="setaddr">
+      <addr>47A5</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze die Heizkreispumpenlogik&#x2212;Funktion M3</description>
+      <!-- KA5_KonfSommersparSchaltschwelleM2 A5 0x47a5 1Byte -->
+    </command>
+    <!-- xxx Konfiguration A6 Erweiterte Sparschaltung xxx -->
+    <!-- KA6_KonfiAbsolutSommersparM2 A6 0x37a6 -->
+    <!-- A6:36 Erweiterte Sparschaltung nicht aktiv A6:5 bis A6:35 Erweiterte
+         Sparschaltung aktiv, d.h. bei einem variabel einstellbaren Wert von 5 bis
+         35 °C zuzüglich 1°C werden Brenner und Heizkreispumpe ausgeschaltet. Grundlage
+         ist die gedämpfte Außentemperatur, die sich aus tatsächlicher Außentemperatur
+         und einer Zeitkonstanten, die das Auskühlen eines durchschnittlichen Gebäudes
+         berücksichtigt, zusammensetzt. -->
+    <command name="getKA6" protocmd="getaddr">
+      <addr>27A6</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Ermittle die AbsolutSommersparschaltung </description>
+      <!-- KA6_KonfiAbsolutSommerspar A6 0x27a6 -->
+    </command>
+    <command name="setKA6" protocmd="setaddr">
+      <addr>27A6</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze die AbsolutSommersparschaltung</description>
+      <!-- KA6_KonfiAbsolutSommerspar A6 0x27a6 -->
+    </command>
+    <command name="getKA6M2" protocmd="getaddr">
+      <addr>37A6</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Ermittle die AbsolutSommersparschaltung M2</description>
+      <!-- KA6_KonfiAbsolutSommersparM2 A6 0x37a6 -->
+    </command>
+    <command name="setKA6M2" protocmd="setaddr">
+      <addr>37A6</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze die AbsolutSommersparschaltung M2</description>
+      <!-- KA6_KonfiAbsolutSommersparM2 A6 0x37a6 1Byte -->
+    </command>
+    <command name="getKA6M3" protocmd="getaddr">
+      <addr>47A6</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Ermittle die AbsolutSommersparschaltung M3</description>
+      <!-- KA6_KonfiAbsolutSommersparM3 A6 0x47a6 -->
+    </command>
+    <command name="setKA6M3" protocmd="setaddr">
+      <addr>47A6</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze die AbsolutSommersparschaltung M3</description>
+      <!-- KA6_KonfiAbsolutSommersparM3 A6 0x47a6 1Byte -->
+    </command>
+    <!-- Auswirkung Mischer auf interne Pumpe -->
+    <command name="getKonfiWirkung_aufPumpe" protocmd="getaddr">
+      <addr>37A8</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Ermittle Einfluss Mischer auf int UWP</description>
+      <!-- 0 ohne 1 M2 setzt Anforderung an Int.Pumpe - nur sinnvoll bei Mischerkreis -->
+      <!-- wenn nicht vorhanden Rückgabewert -1.0 -->
+    </command>
+    <command name="setKonfiWirkung_aufPumpe" protocmd="setaddr">
+      <addr>37A8</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Setze Einfluss Mischer auf int UWP</description>
+      <!-- 0 ohne 1 M2 setzt Anforderung an Int.Pumpe - nur sinnvoll bei Mischerkreis -->
+      <!-- wenn nicht vorhanden Rückgabewert -1.0 -->
+    </command>
+    <command name="getKA3_KonfiFrostgrenzeM1_GWG" protocmd="getaddr">
+      <addr>27A3</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Ermittle die eingestellte Frostgrenze A1M1</description>
+      <!-- Range GradCelsius SByte 1 -9 15 -->
+    </command>
+    <command name="setKA3_KonfiFrostgrenzeM1_GWG" protocmd="setaddr">
+      <addr>27A3</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze die Frostgrenze A1M1</description>
+      <!-- Range GradCelsius SByte 1 -9 15 -->
+    </command>
+    <command name="getKA3_KonfiFrostgrenzeM2_GWG" protocmd="getaddr">
+      <addr>37A3</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Ermittle die eingestellte Frostgrenze</description>
+      <!-- Range GradCelsius SByte 1 -9 15 -->
+    </command>
+    <command name="setKA3_KonfiFrostgrenzeM2_GWG" protocmd="setaddr">
+      <addr>37A3</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze die Frostgrenze</description>
+      <!-- Range GradCelsius SByte 1 -9 15 -->
+    </command>
+    <command name="setPumpeStatusZirku" protocmd="setaddr">
+      <addr>0846</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Setze den Status der Zirkulationspumpe</description>
+      <device ID="2053">
+        <addr>01</addr>
+        <len>1</len>
+        <bit>2</bit>
+        <precommand>getPumpeStatusZirku</precommand>
+        <unit>BA</unit>
+      </device>
+    </command>
+    <command name="setTimerM1Mo" protocmd="setaddr">
+      <addr>2000</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Montag M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM1Di" protocmd="setaddr">
+      <addr>2008</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Dienstag M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM1Mi" protocmd="setaddr">
+      <addr>2010</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Mittwoch M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM1Do" protocmd="setaddr">
+      <addr>2018</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Donnerstag M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM1Fr" protocmd="setaddr">
+      <addr>2020</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Freitag M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM1Sa" protocmd="setaddr">
+      <addr>2028</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Samstag M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM1So" protocmd="setaddr">
+      <addr>2030</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Sonntag M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM2Mo" protocmd="setaddr">
+      <addr>3000</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Montag M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM2Di" protocmd="setaddr">
+      <addr>3008</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Dienstag M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM2Mi" protocmd="setaddr">
+      <addr>3010</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Mittwoch M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM2Do" protocmd="setaddr">
+      <addr>3018</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Donnerstag M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM2Fr" protocmd="setaddr">
+      <addr>3020</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Freitag M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM2Sa" protocmd="setaddr">
+      <addr>3028</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Samstag M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerM2So" protocmd="setaddr">
+      <addr>3030</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Sonntag M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerWWMo" protocmd="setaddr">
+      <addr>2100</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Montag Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerWWDi" protocmd="setaddr">
+      <addr>2108</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Dienstag Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerWWMi" protocmd="setaddr">
+      <addr>2110</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Mittwoch Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerWWDo" protocmd="setaddr">
+      <addr>2118</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Donnerstag Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerWWFr" protocmd="setaddr">
+      <addr>2120</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Freitag Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerWWSa" protocmd="setaddr">
+      <addr>2128</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Samstag Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerWWSo" protocmd="setaddr">
+      <addr>2130</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Sonntag Warmwasser</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerZirkuMo" protocmd="setaddr">
+      <addr>2200</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Montag Zirku</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerZirkuDi" protocmd="setaddr">
+      <addr>2208</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Dienstag Zirku</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerZirkuMi" protocmd="setaddr">
+      <addr>2210</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Mittwoch Zirku</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerZirkuDo" protocmd="setaddr">
+      <addr>2218</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Donnerstag Zirku</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerZirkuFr" protocmd="setaddr">
+      <addr>2220</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Freitag Zirku</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerZirkuSa" protocmd="setaddr">
+      <addr>2228</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Samstag Zirku</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTimerZirkuSo" protocmd="setaddr">
+      <addr>2230</addr>
+      <len>8</len>
+      <unit>CT</unit>
+      <description>Schaltzeit Sonntag Zirku</description>
+      <device ID="2053"/>
+    </command>
+
+    <!-- Gerätedaten -->
+    <command name="getDevType" protocmd="getaddr">
+      <addr>00F8</addr>
+      <len>8</len>
+      <unit>DT</unit>
+      <description>Ermittle Device Typ der Anlage / SystemIdent_SX</description>
+    </command>
+    <command name="getCtrlId" protocmd="getaddr">
+      <addr>00F9</addr>
+      <len>7</len>
+      <unit>DT</unit>
+      <description>Reglerkennung</description>
+    </command>
+    <command name="getInventory" protocmd="getaddr">
+      <addr>08E0</addr>
+      <len>7</len>
+      <unit>SN</unit>
+      <description>Sachnummer</description>
+    </command>
+    <command name="getInvCodePlug" protocmd="getaddr">
+      <addr>1010</addr>
+      <len>7</len>
+      <unit>SN</unit>
+      <description>Sachnummer Codierstecker</description>
+    </command>
+    <command name="getPanelSWIndex" protocmd="getaddr">
+      <addr>7330</addr>
+      <len>8</len>
+      <unit>DT</unit>
+      <description>Bedienteil SW Index</description>
+    </command>
+  </commands>
+</vito>
