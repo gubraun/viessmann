@@ -25,6 +25,7 @@
 ||`76`|`0`||||
 ||`77`|`1`||||
 |Kessel/Gruppe "2"|
+||`30`|`1`|`0`|||
 |Warmwasser/Gruppe "3"|
 |Solar/Gruppe "4"|
 |Heizkreis 1|
