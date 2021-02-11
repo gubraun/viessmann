@@ -1,6 +1,6 @@
 # Codieradressen
 
-|Gruppe|Adresse|Funktion|Default Wert|Aktueller Wert|Adresse (vcontrold)|
+||Adresse|Funktion|Default Wert|Aktueller Wert|Adresse (vcontrold)|
 |---|---|---|---|---|---|
 |Allgemein/Gruppe "1"|
 ||00:1|Anlagenschema|
