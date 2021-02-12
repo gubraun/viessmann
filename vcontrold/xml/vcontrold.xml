@@ -127,16 +127,32 @@
       <enum bytes='03' text='2'/>
       <enum text="NOT OK"/>
     </unit>
-    <unit name="BetriebsArt">
+    <unit name="Betriebsart">
       <abbrev>BA</abbrev>
       <type>enum</type>
-      <enum bytes="00" text="WW"/>
-      <enum bytes="01" text="RED"/>
-      <enum bytes="02" text="NORM"/>
-      <enum bytes="04" text="H+WW FS"/>
-      <enum bytes="03" text="H+WW"/>
-      <enum bytes="05" text="ABSCHALT"/>
+      <enum bytes="00" text="Abschaltbetrieb"/>
+      <enum bytes="01" text="Nur WW"/>
+      <enum bytes="02" text="Heizen + WW"/>
+      <enum bytes="03" text="Dauernd reduzierter Betrieb"/>
+      <enum bytes="04" text="Dauernd Normalbetrieb"/>
       <enum text="UNKNOWN"/>
+    </unit>
+    <unit name='Aktuelle Betriebsart'>
+      <abbrev>ABA</abbrev>
+      <type>enum</type>
+      <enum bytes='00' text='Abschaltbetr. (Dauernd)'/>
+      <enum bytes='01' text='Red. Betrieb (Schaltuhr)'/>
+      <enum bytes='02' text='Normalbetrieb (Schaltuhr)'/>
+      <enum bytes='03' text='Normalbetrieb (Dauernd)'/>
+      <enum text='?'/>
+    </unit>
+    <unit name='Ferienbetrieb'>
+      <abbrev>BFB</abbrev>
+      <type>uchar</type>
+      <icalc get="(B7 &amp; (0x01&lt;&lt;BP))&gt;&gt; BP"/>
+      <enum bytes='00' text='inaktiv'/>
+      <enum bytes='01' text='aktiv'/>
+      <enum text='?'/>
     </unit>
     <unit name="SetReturnStatus">
       <abbrev>SR</abbrev>
