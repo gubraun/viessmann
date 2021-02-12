@@ -256,12 +256,12 @@
       <entity>h</entity>
     </unit>
     <unit name='Flammenstatus'>
-			<abbrev>FLS</abbrev>
-			<type>enum</type>
-			<enum bytes='00' text='aus'/>
-			<enum bytes='0B' text='an'/>
-			<enum text='?'/>
-		</unit>
+      <abbrev>FLS</abbrev>
+      <type>enum</type>
+      <enum bytes='00' text='aus'/>
+      <enum bytes='0B' text='an'/>
+      <enum text='?'/>
+    </unit>
     <unit name="ErrorStateGWG">
       <abbrev>ESG</abbrev>
       <type>enum</type>
