@@ -200,7 +200,8 @@
     <command name='getVitoStatusFlamme' protocmd='getaddr'>
 			<addr>55DE</addr>
 			<len>1</len>
-			<unit>FLS</unit>
+			<unit>ST</unit>
+      <!-- Benutze 'FLS' um den Zustand als String zu sehen -->
 			<description>Flammenstatus</description>
 		</command>
     <command name="getVitoBrennerLeistung" protocmd="getaddr">
