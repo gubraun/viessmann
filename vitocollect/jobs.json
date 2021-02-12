@@ -1,0 +1,74 @@
+[
+  {
+    "measurement": "Umgebungstemperaturen",
+    "interval": 600000,
+    "fields": {
+      "Außentemperatur": {
+        "type": "FLOAT",
+        "command": "getVitoTempAussen"
+      },
+      "Raumtemperatur": {
+        "type": "FLOAT",
+        "command": "getVitoTempRaumHK"
+      }
+    }
+  },
+  {
+    "measurement": "Heizungstemperaturen",
+    "interval": 60000,
+    "fields": {
+      "Kesseltemperatur": {
+        "type": "FLOAT",
+        "command": "getVitoTempKesselIst"
+      },
+      "Warmwassertemperatur": {
+        "type": "FLOAT",
+        "command": "getVitoTempWWIst"
+      },
+      "Vorlauftemperatur": {
+        "type": "FLOAT",
+        "command": "getVitoTempVLIst"
+      },
+      "Abgastemperatur": {
+        "type": "FLOAT",
+        "command": "getVitoTempAbgas"
+      }
+    }
+  },
+  {
+    "measurement": "Heizungsstatus",
+    "interval": 60000,
+    "fields": {
+      "Brennerstatus": {
+        "type": "FLOAT",
+        "command": "getVitoBrennerStatus"
+      },
+      "Brennerleistung": {
+        "type": "FLOAT",
+        "command": "getVitoBrennerLeistung"
+      },
+      "Umschaltventil": {
+        "type": "FLOAT",
+        "command": "getVitoStatusUmschaltventil"
+      },
+      "Flammenstatus": {
+        "type": "FLOAT",
+        "command": "getVitoStatusFlamme"
+      }
+    }
+  },
+  {
+    "measurement": "Lebenszyklus",
+    "interval": 600000,
+    "fields": {
+      "Brennerstarts": {
+        "type": "FLOAT",
+        "command": "getVitoBrennerStarts"
+      },
+      "Brennerstunden": {
+        "type": "FLOAT",
+        "command": "getVitoBrennerStunden"
+      }
+    }
+  }
+]

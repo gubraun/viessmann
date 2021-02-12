@@ -1,0 +1,11 @@
+[Unit]
+Description=vitocollect service
+After=vcontrold.service influxdb.service
+Wants=vcontrold.service influxdb.service
+
+[Service]
+Type=simple
+ExecStart=vitocollect
+
+[Install]
+WantedBy=multi-user.target
