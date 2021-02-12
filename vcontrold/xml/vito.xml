@@ -197,6 +197,12 @@
       <unit>PR1</unit>
       <description>Aktuelle Brennerleistung</description>
     </command>
+    <command name='getVitoStatusFlamme' protocmd='getaddr'>
+			<addr>55DE</addr>
+			<len>1</len>
+			<unit>FLS</unit>
+			<description>Flammenstatus</description>
+		</command>
     <command name="getVitoBrennerLeistung" protocmd="getaddr">
       <!-- Was ist der Unterscheid zu 55D3? -->
       <addr>A38F</addr>
@@ -286,7 +292,7 @@
       <unit>ABA</unit>
       <description>Aktuelle Betriebsart des Heizkreises</description>
     </command>
-    <command name="getVitoPumpeStatusHK" protocmd="getaddr">
+    <command name="getVitoStatusPumpeHK" protocmd="getaddr">
       <addr>2906</addr>
       <len>1</len>
       <unit>RT</unit>
@@ -319,7 +325,8 @@
     <command name="getVitoStatusUmschaltventil" protocmd="getaddr">
       <addr>0A10</addr>
       <len>1</len>
-      <unit>USV</unit>
+      <unit>ST</unit>
+      <!-- Benutze 'USV' um den Zustand als String zu sehen -->
       <description>Status Umschaltventil Warmwasser/Heizen</description>
     </command>
 

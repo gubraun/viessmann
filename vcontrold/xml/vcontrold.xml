@@ -255,6 +255,13 @@
       <calc get="(B1 * 100)+B0"/>
       <entity>h</entity>
     </unit>
+    <unit name='Flammenstatus'>
+			<abbrev>FLS</abbrev>
+			<type>enum</type>
+			<enum bytes='00' text='aus'/>
+			<enum bytes='0B' text='an'/>
+			<enum text='?'/>
+		</unit>
     <unit name="ErrorStateGWG">
       <abbrev>ESG</abbrev>
       <type>enum</type>
@@ -287,7 +294,7 @@
     <unit name="Umschaltventil Stellung">
       <abbrev>USV</abbrev>
       <type>enum</type>
-      <enum bytes="00" text="UNDEV"/>
+      <enum bytes="00" text="UNDEFINIERT"/>
       <enum bytes="01" text="Heizen"/>
       <enum bytes="02" text="Mittelstellung"/>
       <enum bytes="03" text="Warmwasser"/>
