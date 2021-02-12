@@ -325,7 +325,8 @@
     <command name="getVitoStatusUmschaltventil" protocmd="getaddr">
       <addr>0A10</addr>
       <len>1</len>
-      <unit>USV</unit>
+      <unit>ST</unit>
+      <!-- Benutze 'USV' um den Zustand als String zu sehen -->
       <description>Status Umschaltventil Warmwasser/Heizen</description>
     </command>
 
