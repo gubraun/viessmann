@@ -276,7 +276,7 @@
     <command name="getVitoTempRaumHK" protocmd="getaddr">
       <addr>0896</addr>
       <len>2</len>
-      <unit>UTI</unit>
+      <unit>UT</unit>
       <description>Heizkreis Raumtemperatur in Grad C</description>
     </command>
     <command name='getVitoBetriebsartHK' protocmd='getaddr'>
