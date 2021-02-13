@@ -296,7 +296,8 @@
     <command name="getVitoStatusPumpeHK" protocmd="getaddr">
       <addr>2906</addr>
       <len>1</len>
-      <unit>RT</unit>
+      <unit>ST</unit>
+      <!-- Original 'RT', auf 'ST' geändert für InfluxDB -->
       <description>Status Heizkreispumpe</description>
     </command>
     <command name="getVitoStatusPumpeIntern" protocmd="getaddr">
@@ -304,20 +305,23 @@
       <description>Status Interne Pumpe</description>
       <addr>7660</addr>
       <len>1</len>
-      <unit>RT</unit>
+      <unit>ST</unit>
+      <!-- Original 'RT', auf 'ST' geändert für InfluxDB -->
     </command>
     <!-- Wahrscheinlich nicht vorhanden -->
     <command name="getVitoStatusPumpeSpeicher" protocmd="getaddr">
       <addr>0845</addr>
       <len>1</len>
-      <unit>RT</unit>
+      <unit>ST</unit>
+      <!-- Original 'RT', auf 'ST' geändert für InfluxDB -->
       <description>Status Speicherladepumpe</description>
     </command>
     <!-- Nicht vorhanden -->
     <command name="getVitoStatusPumpeZirku" protocmd="getaddr">
       <addr>0846</addr>
       <len>1</len>
-      <unit>RT</unit>
+      <unit>ST</unit>
+      <!-- Original 'RT', auf 'ST' geändert für InfluxDB -->
       <description>Status Zirkulationspumpe</description>
     </command>
 
