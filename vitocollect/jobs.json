@@ -14,6 +14,32 @@
     }
   },
   {
+    "measurement": "Heizungseinstellungen",
+    "interval": 600000,
+    "fields": {
+      "Heizkennlinie Niveau": {
+        "type": "FLOAT",
+        "command": "getVitoKennlinieNiveau"
+      },
+      "Heizkennlinie Neigung": {
+        "type": "FLOAT",
+        "command": "getVitoKennlinieNeigung"
+      },
+      "Raumsolltemperatur Normal": {
+        "type": "FLOAT",
+        "command": "getVitoTempRaumNorSoll"
+      },
+      "Raumsolltemperatur red. Betrieb": {
+        "type": "FLOAT",
+        "command": "getVitoTempRaumRedSoll"
+      },
+      "Warmwassersolltemperatur": {
+        "type": "FLOAT",
+        "command": "getVitoTempWWSoll"
+      }
+    }
+  },
+  {
     "measurement": "Heizungstemperaturen",
     "interval": 60000,
     "fields": {
@@ -25,9 +51,21 @@
         "type": "FLOAT",
         "command": "getVitoTempWWIst"
       },
+      "WW-Auslauftemperatur": {
+        "type": "FLOAT",
+        "command": "getVitoTempWWAuslauf"
+      },
       "Vorlauftemperatur": {
         "type": "FLOAT",
         "command": "getVitoTempVLIst"
+      },
+      "Vorlaufsolltemperatur": {
+        "type": "FLOAT",
+        "command": "getVitoTempVLSoll"
+      },
+      "Rücklauftemperatur": {
+        "type": "FLOAT",
+        "command": "getVitoTempRLIst"
       },
       "Abgastemperatur": {
         "type": "FLOAT",
@@ -54,6 +92,14 @@
       "Flammenstatus": {
         "type": "FLOAT",
         "command": "getVitoStatusFlamme"
+      },
+      "Heizkreispumpe": {
+        "type": "FLOAT",
+        "command": "getVitoStatusPumpeHK"
+      },
+      "Interne Pumpe": {
+        "type": "FLOAT",
+        "command": "getVitoStatusPumpeIntern"
       }
     }
   },
