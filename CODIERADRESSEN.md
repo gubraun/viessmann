@@ -1,4 +1,5 @@
 # Codieradressen
+Adresse (letzte Spalte) ist die Adresse über die der Datenpunkt mit vcontrol ansprechbar ist.
 
 ## Allgemein/Gruppe "1"
 ||Adresse|Werkseinst.|Aktueller Wert|Adresse*|
@@ -46,10 +47,8 @@
 ||`9C`|`20`||||
 ||`9F`|`8`||||
 
-\* Addresse des Datenpunkts für vcontrold.
-
 ## Kessel/Gruppe "2"
-||Adresse|Werkseinst.|Aktueller Wert|Adresse (vcontrold)|
+||Adresse|Werkseinst.|Aktueller Wert|Adresse*|
 |---|---|---|---|---|
 |Ein-/Mehrkesselanlage|`01`|`1`||||
 ||`04`|`1`||||
@@ -70,7 +69,7 @@
 ||`38`|`0`||||
 
 ## Warmwasser/Gruppe "3"
-||Adresse|Werkseinst.|Aktueller Wert|Adresse (vcontrold)|
+||Adresse|Werkseinst.|Aktueller Wert|Adresse*|
 |---|---|---|---|---|
 ||`56`|`0`||||
 ||`58`|`0`||||
@@ -89,12 +88,37 @@
 ||`71`|`0`||||
 ||`72`|`0`||||
 |Freigabe Zirkulationspumpe|`73`|`0`||||
-|Solar/Gruppe "4"|
+
+## Solar/Gruppe "4"
+||Adresse|Werkseinst.|Aktueller Wert|Adresse*|
+|---|---|---|---|---|
+||`00`|`8`||||
+||`01`|`4`||||
 |Drehzahlsteuerung-Solarkreispumpe|`02`|`0`||||
+||`03`|`10`||||
+||`04`|`4`||||
+||`05`|`10`||||
+||`06`|`75`||||
+||`07`|`0`||||
 |Speichermaximaltemperatur|`08`|`60`||||
+||`09`|`130`||||
 |Stagnationszeit-Reduzierung|`0A`|`5`||||
+||`0b`|`0`||||
+||`0C`|`1`||||
+||`0d`|`1`||||
+||`0E`|`1`||||
 |Volumenstrom Solarkreis|`0F`|`70`||||
+||`10`|`0`||||
+|Speicher-Solltemperatur solar|`11`|`50`||||
+||`12`|`20`||||
 |Erweiterte Solar-Regelungsfunktionen|`20`|`0`||||
+||`22`|`8`||||
+||`23`|`4`||||
+||`24`|`40`||||
+||`25`|`50`||||
+||`26`|`1`||||
+||`27`|`15`||||
+||`28`|`3`||||
 
 ## Heizkreis 1, Heizkreis 2, Heizkreis 3/Gruppe „5“
 ||Adresse|Default Wert|Aktueller Wert|Adresse (vcontrold)|
