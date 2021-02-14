@@ -87,10 +87,10 @@ Quelle: [Serviceanleitung Vitodens 200-W, Typ WB2C, 8/2011](https://www.viessman
 |Warmwassertemp. Soll Nachheizunterdrückung|`67`|`40`||||
 ||`6C`|`100`||||
 ||`6d`|`0`||||
-||`6F`|`-`|`100`|||
+|Max. Wärmeleistung Trinkwassererwärmung|`6F`|`-`|`100` (%)|||
 ||`71`|`0`|`0`|||
 ||`72`|`0`|`0`|||
-|Freigabe Zirkulationspumpe|`73`|`0`|`0|||
+|Freigabe Zirkulationspumpe|`73`|`0`|`0`|||
 
 ## Solar/Gruppe "4"
 ||Adresse|Werkseinst.|Aktueller Wert|Adresse*|
