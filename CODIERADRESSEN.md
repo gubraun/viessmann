@@ -47,7 +47,7 @@
 ||`9F`|`8`||||
 
 ## Kessel/Gruppe "2"
-||Adresse|Default Wert|Aktueller Wert|Adresse (vcontrold)|
+||Adresse|Werkseinst.|Aktueller Wert|Adresse (vcontrold)|
 |---|---|---|---|---|
 |Ein-/Mehrkesselanlage|`01`|`1`||||
 ||`04`|`1`||||
@@ -68,9 +68,24 @@
 ||`38`|`0`||||
 
 ## Warmwasser/Gruppe "3"
-||Adresse|Default Wert|Aktueller Wert|Adresse (vcontrold)|
+||Adresse|Werkseinst.|Aktueller Wert|Adresse (vcontrold)|
 |---|---|---|---|---|
+||`56`|`0`||||
+||`58`|`0`||||
+|Speicherbeheizung: Einschaltpunkt|`59`|`0`||||
+||`5b`|`0`||||
+||`5E`|`0`||||
+||`5F`|`0`||||
+||`60`|`20`||||
+||`62`|`2`||||
+||`63`|`0`||||
+|Bauart Umschaltventil|`65`|`-`||||
 |Warmwassertemp. Soll Nachheizunterdrückung|`67`|`40`||||
+||`6C`|`100`||||
+||`6d`|`0`||||
+||`6F`|`-`||||
+||`71`|`0`||||
+||`72`|`0`||||
 |Freigabe Zirkulationspumpe|`73`|`0`||||
 |Solar/Gruppe "4"|
 |Drehzahlsteuerung-Solarkreispumpe|`02`|`0`||||
