@@ -4,7 +4,7 @@
 |---|---|---|---|---|
 |Allgemein/Gruppe "1"|
 |Anlagenausführung|`00`|`1`|`2`|`0x7700`|
-|Zugang Codieradressen Verbrennungsregelung|`11`|`\neq 9` (nein)||||
+|Zugang Codieradressen Verbrennungsregelung|`11`|\neq `9` (nein)||||
 |Außentemp.-Sensor vorhanden|`25`|`0`||||
 ||`32`|`0`||||
 ||`33`|`1`||||
