@@ -46,6 +46,8 @@
 ||`9C`|`20`||||
 ||`9F`|`8`||||
 
+* Addresse des Datenpunkts für vcontold.
+
 ## Kessel/Gruppe "2"
 ||Adresse|Werkseinst.|Aktueller Wert|Adresse (vcontrold)|
 |---|---|---|---|---|
