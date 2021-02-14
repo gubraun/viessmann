@@ -83,7 +83,7 @@ Quelle: [Serviceanleitung Vitodens 200-W, Typ WB2C, 8/2011](https://www.viessman
 ||`60`|`20`|`20`|||
 ||`62`|`2`|`2`|||
 ||`63`|`0`||||
-|Bauart Umschaltventil|`65`|`-`|`3`|||
+|Bauart Umschaltventil|`65`|`-`|`3` (Grundfos)|||
 |Warmwassertemp. Soll Nachheizunterdrückung|`67`|`40`||||
 ||`6C`|`100`||||
 ||`6d`|`0`||||
