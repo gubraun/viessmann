@@ -3,7 +3,7 @@
 ||Adresse|Default Wert|Aktueller Wert|Adresse (vcontrold)|
 |---|---|---|---|---|
 |Allgemein/Gruppe "1"|
-||`00`|`1`|`2`|`0x7700`|
+|Anlagenausführung|`00`|`1`|`2`|`0x7700`|
 ||`11`|`!=9`||||
 ||`25`|`0`||||
 ||`32`|`0`||||
