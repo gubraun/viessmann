@@ -54,7 +54,7 @@ Quelle: [Serviceanleitung Vitodens 200-W, Typ WB2C, 8/2011](https://www.viessman
 ||Adresse|Werkseinst.|Aktueller Wert|Adresse*|
 |---|---|---|---|---|
 |Ein-/Mehrkesselanlage|`01`|`1`||||
-||`04`|`1`|`0`|||
+|Brenner-Mindestpausezeit (voreingestellt durch Codierstecker)|`04`|`1`|`0`|||
 |Maximalbegrenzung Kesselwassertemp.|`06`|`-`|`82`|||
 ||`0d`|`0`|`0`|||
 ||`0E`|`0`|`0`|||
