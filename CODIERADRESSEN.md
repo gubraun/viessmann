@@ -161,5 +161,5 @@ Quelle: [Serviceanleitung Vitodens 200-W, Typ WB2C, 8/2011](https://www.viessman
 |Beginn Temperaturanhebung|`F8`|`-5`|`-5`|||
 |Ende Temperaturanhebung|`F9`|`-14`|`-14`|||
 |Erhöhung Vorlauftemperatur Sollwert|`FA`|`20`|`0`|||
-|Zeitdauer Erhöhung Vorlauftemperatur-Sollwert|`Fb`|`30`|`1|||
+|Zeitdauer Erhöhung Vorlauftemperatur-Sollwert|`Fb`|`30`|`1`|||
 
