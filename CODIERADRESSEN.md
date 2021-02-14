@@ -1,8 +1,8 @@
 # Codieradressen
 Adresse (letzte Spalte) ist die Adresse über die der Datenpunkt mit vcontrol ansprechbar ist.
 
-Quelle: Serviceanleitung Vitodens 200-W, Typ WB2C, 8/2011
-https://www.viessmann.com/vires/product_documents/5604579VSA00001_1.PDF
+Quelle: [Serviceanleitung Vitodens 200-W, Typ WB2C, 8/2011](https://www.viessmann.com/vires/product_documents/5604579VSA00001_1.PDF)
+
 
 ## Allgemein/Gruppe "1"
 ||Adresse|Werkseinst.|Aktueller Wert|Adresse*|
