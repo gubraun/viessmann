@@ -1,7 +1,7 @@
 # Codieradressen
 
 ## Allgemein/Gruppe "1"
-||Adresse|Werkseinst.|Aktueller Wert|Adresse (vcontrold)|
+||Adresse|Werkseinst.|Aktueller Wert|Adresse*|
 |---|---|---|---|---|
 |Anlagenschema|`00`|`1`|`2`|`0x7700`|
 |Zugang Codieradressen Verbrennungsregelung|`11`|`!=9`||||
