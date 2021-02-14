@@ -48,6 +48,7 @@
 
 ## Kessel/Gruppe "2"
 ||Adresse|Default Wert|Aktueller Wert|Adresse (vcontrold)|
+|---|---|---|---|---|
 |Ein-/Mehrkesselanlage|`01`|`1`||||
 ||`04`|`1`||||
 |Maximalbegrenzung Kesselwassertemp.|`06`|`-`||||
@@ -68,6 +69,7 @@
 
 ## Warmwasser/Gruppe "3"
 ||Adresse|Default Wert|Aktueller Wert|Adresse (vcontrold)|
+|---|---|---|---|---|
 |Warmwassertemp. Soll Nachheizunterdrückung|`67`|`40`||||
 |Freigabe Zirkulationspumpe|`73`|`0`||||
 |Solar/Gruppe "4"|
@@ -82,8 +84,24 @@
 |---|---|---|---|---|
 |Heizkreis 1, Heizkreis 2, Heizkreis 3/Gruppe „5“
 |Sparfunktion Außentemperatur|`A5`|`5`||||
-||`38`|`0`||||
-||`38`|`0`||||
-||`38`|`0`||||
+|Erweiterte Sparfunktion gedämpfte Außentemperatur|`A6`|`36`||||
+|Erweiterte Sparfunktion Mischer|`A7`|`0`||||
+|Pumpenstillstandzeit Übergang reduziert. Betrieb|`A9`|`7`||||
+|Witterungsgeführt/Raumtemperaturaufschaltung|`b0`|`0`||||
+|Sparfunktion Raumtemperatur|`b5`|`0`||||
+|Min. Vorlauftemperatur Heizkreis|`C5`|`20`||||
+|Max. Vorlauftemperatur Heizkreis|`C6`|`74`||||
+|Betriebsprogramm-Umschaltung|`d5`|`0`||||
+|Ext. Betriebsprogramm-Umschaltung auf Heizkreis|`d8`|`0`||||
+|Max. Pumpendrehzahl im Normalbetrieb|`E6`|`-`||||
+|Min. Pumpendrehzahl|`E7`|`30`||||
+|Estrichfunktion|`F1`|`0`||||
+|Partybetrieb Zeitbegrenzung|`F2`|`8`||||
+|Pumpenschaltung bei “Nur Warmwasser”|`F6`|`25`||||
+|Pumpenschaltung bei “Abschaltbetrieb”|`F7`|`25`||||
+|Beginn Temperaturanhebung|`F8`|`-5`||||
+|Ende Temperaturanhebung|`F9`|`-14`||||
+|Erhöhung Vorlauftemperatur Sollwert|`FA`|`20`||||
+|Zeitdauer Erhöhung Vorlauftemperatur-Sollwert|`Fb`|`30`||||
 
-|Alle Codierungen Grundgerät|
+## Alle Codierungen Grundgerät
