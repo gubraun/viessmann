@@ -124,7 +124,7 @@ Quelle: [Serviceanleitung Vitodens 200-W, Typ WB2C, 8/2011](https://www.viessman
 ||`28`|`3`||||
 
 ## Heizkreis 1, Heizkreis 2, Heizkreis 3/Gruppe „5“
-||Adresse|Default Wert|Aktueller Wert|Adresse*|
+||Adresse|Werkseinst.|Aktueller Wert|Adresse*|
 |---|---|---|---|---|
 |Fernbedienung|`A0`|`0`||||
 ||`A1`|`0`||||
