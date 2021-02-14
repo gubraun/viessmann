@@ -64,6 +64,18 @@
 |Solldrehzahl (%) interne Umwälzpumpe|`31`|`-`||||
 ||`38`|`0`||||
 |Warmwasser/Gruppe "3"|
+|Warmwassertemp. Soll Nachheizunterdrückung|`67`|`40`||||
+|Freigabe Zirkulationspumpe|`73`|`0`||||
 |Solar/Gruppe "4"|
-|Heizkreis 1|
+|Drehzahlsteuerung-Solarkreispumpe|`02`|`0`||||
+|Speichermaximaltemperatur|`08`|`60`||||
+|Stagnationszeit-Reduzierung|`0A`|`5`||||
+|Volumenstrom Solarkreis|`0F`|`70`||||
+|Erweiterte Solar-Regelungsfunktionen|`20`|`0`||||
+|Heizkreis 1, Heizkreis 2, Heizkreis 3/Gruppe „5“ |
+|Sparfunktion Außentemperatur|`A5`|`5`||||
+||`38`|`0`||||
+||`38`|`0`||||
+||`38`|`0`||||
+
 |Alle Codierungen Grundgerät|
