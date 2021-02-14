@@ -72,7 +72,11 @@
 |Stagnationszeit-Reduzierung|`0A`|`5`||||
 |Volumenstrom Solarkreis|`0F`|`70`||||
 |Erweiterte Solar-Regelungsfunktionen|`20`|`0`||||
-|Heizkreis 1, Heizkreis 2, Heizkreis 3/Gruppe „5“ |
+
+## Heizkreis 1, Heizkreis 2, Heizkreis 3/Gruppe „5“
+||Adresse|Default Wert|Aktueller Wert|Adresse (vcontrold)|
+|---|---|---|---|---|
+|Heizkreis 1, Heizkreis 2, Heizkreis 3/Gruppe „5“
 |Sparfunktion Außentemperatur|`A5`|`5`||||
 ||`38`|`0`||||
 ||`38`|`0`||||
