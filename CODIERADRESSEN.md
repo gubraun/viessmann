@@ -1,8 +1,8 @@
 # Codieradressen
 
+## Allgemein/Gruppe "1"
 ||Adresse|Default Wert|Aktueller Wert|Adresse (vcontrold)|
 |---|---|---|---|---|
-|Allgemein/Gruppe "1"|
 |Anlagenschema|`00`|`1`|`2`|`0x7700`|
 |Zugang Codieradressen Verbrennungsregelung|`11`|`!=9`||||
 |Außentemp.-Sensor vorhanden|`25`|`0`||||
@@ -45,7 +45,9 @@
 |Vorlauftemperatur Sollwert bei externer Anforderung|`9b`|`70`||||
 ||`9C`|`20`||||
 ||`9F`|`8`||||
-|Kessel/Gruppe "2"|
+
+## Kessel/Gruppe "2"
+||Adresse|Default Wert|Aktueller Wert|Adresse (vcontrold)|
 |Ein-/Mehrkesselanlage|`01`|`1`||||
 ||`04`|`1`||||
 |Maximalbegrenzung Kesselwassertemp.|`06`|`-`||||
@@ -63,7 +65,9 @@
 |Interne Umwälzpumpe drehzahlgeregelt?|`30`|`1`||||
 |Solldrehzahl (%) interne Umwälzpumpe|`31`|`-`||||
 ||`38`|`0`||||
-|Warmwasser/Gruppe "3"|
+
+## Warmwasser/Gruppe "3"
+||Adresse|Default Wert|Aktueller Wert|Adresse (vcontrold)|
 |Warmwassertemp. Soll Nachheizunterdrückung|`67`|`40`||||
 |Freigabe Zirkulationspumpe|`73`|`0`||||
 |Solar/Gruppe "4"|
