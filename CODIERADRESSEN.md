@@ -3,7 +3,11 @@ Adresse (letzte Spalte) ist die Adresse über die der Datenpunkt mit vcontrol an
 
 Quelle: [Serviceanleitung Vitodens 200-W, Typ WB2C, 8/2011](https://www.viessmann.com/vires/product_documents/5604579VSA00001_1.PDF)
 
-[bla](#allgemeingruppe-1)
+* [Allgemein/Gruppe "1"](#allgemeingruppe-1)
+* [Kessel/Gruppe "2"](#kesselgruppe-2)
+* [Warmwasser/Gruppe "3"](#warmwassergruppe-3)
+* [Solar/Gruppe "4"](#solargruppe-4)
+* [Heizkreis 1, Heizkreis 2, Heizkreis 3/Gruppe „5“](#heizkreis-1-heizkreis-2-heizkreis-3gruppe-5)
 
 
 ## Allgemein/Gruppe "1"
