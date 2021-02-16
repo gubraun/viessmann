@@ -182,6 +182,12 @@
       <unit>UT</unit>
       <description>Vorlauf- bzw. Kesseltemperatur in Grad C</description>
     </command>
+    <command name="getVitoTempKesselIst2" protocmd="getaddr">
+      <addr>0810</addr>
+      <len>2</len>
+      <unit>UT</unit>
+      <description>Vorlauf- bzw. Kesseltemperatur in Grad C</description>
+    </command>
     <command name="getVitoTempKesselSoll" protocmd="getaddr">
       <addr>555A</addr>
       <len>2</len>
