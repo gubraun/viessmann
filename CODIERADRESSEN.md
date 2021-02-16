@@ -154,7 +154,7 @@ Quelle: [Serviceanleitung Vitodens 200-W, Typ WB2C, 8/2011](https://www.viessman
 |Ext. Betriebsprogramm-Umschaltung auf Heizkreis|`d8`|`0`||||
 ||`E1`|`1`|`1`|||
 ||`E2`|`50`|`50`|||
-||`E5`|`0`|`0`|||
+|Externe Heizkreispumpe?|`E5`|`0`|`0`|||
 |Max. Pumpendrehzahl im Normalbetrieb|`E6`|`-`||||
 |Min. Pumpendrehzahl|`E7`|`30`||||
 ||`E8`|`1`||||
