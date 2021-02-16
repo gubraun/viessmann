@@ -5,6 +5,11 @@
 - Vitotronic 200 Type HO1B
 - Vitocell 100-W Warmwasserspeicher
 
+## Konfiguration
+Master-Konfigurationsdateien für Vitotronic (HO1B) ("20CB") hier:
+* https://github.com/openv/openv/wiki/files/vito.xml
+* https://github.com/openv/openv/wiki/files/vcontrold.xml
+
 ## Interessante Daten
 - Aussentemp
 - Raumtemp ist/soll 0896/
