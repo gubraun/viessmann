@@ -9,3 +9,7 @@ A collection of quality information around the Vitotronic heating controllers fr
 ## Documentation
 - [Vitodens-W WB2C Uml.19kW](https://www.viessmann.com/etapp/parts/de/0500/7424975) - Manuals and service manuals for my Vitodens
 - [Vitotronic 200 FAQ v2](https://www.haustechnikdialog.de/Forum/t/217284/FAQ-Vitotronic-200-Version-2) - The most amazing collection of information on Vitotronic 200 devices
+
+## Questions
+- Was passiert wenn ich die VL-Temperatur erhöhe (via Heizkurve)? Ändert sich die Spreizung? Brennerstarts?
+- Wie wirkt sich eine RT-Aufschaltung aus (VL und HKP)?
