@@ -11,5 +11,5 @@ A collection of quality information around the Vitotronic heating controllers fr
 - [Vitotronic 200 FAQ v2](https://www.haustechnikdialog.de/Forum/t/217284/FAQ-Vitotronic-200-Version-2) - The most amazing collection of information on Vitotronic 200 devices
 
 ## Questions
-- Was passiert wenn ich die VL-Temperatur erhöhe (via Heizkurve)? Ändert sich die Spreizung?
+- Was passiert wenn ich die VL-Temperatur erhöhe (via Heizkurve)? Ändert sich die Spreizung? Brennerstarts?
 - Wie wirkt sich eine RT-Aufschaltung aus (VL und HKP)?
