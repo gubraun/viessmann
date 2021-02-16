@@ -47,6 +47,10 @@
         "type": "FLOAT",
         "command": "getVitoTempKesselIst"
       },
+      "Kesselsolltemperatur": {
+        "type": "FLOAT",
+        "command": "getVitoTempKesselSoll"
+      },
       "Warmwassertemperatur": {
         "type": "FLOAT",
         "command": "getVitoTempWWIst"
