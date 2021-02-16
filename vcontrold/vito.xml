@@ -182,12 +182,6 @@
       <unit>UT</unit>
       <description>Vorlauf- bzw. Kesseltemperatur in Grad C</description>
     </command>
-    <command name="getVitoTempKesselIst2" protocmd="getaddr">
-      <addr>0810</addr>
-      <len>2</len>
-      <unit>UT</unit>
-      <description>Vorlauf- bzw. Kesseltemperatur in Grad C</description>
-    </command>
     <command name="getVitoTempKesselSoll" protocmd="getaddr">
       <addr>555A</addr>
       <len>2</len>
@@ -268,7 +262,7 @@
     <!-- HEIZKREIS -->
 
     <command name="getVitoTempVLIst" protocmd="getaddr">
-      <!-- Identisch mit Kesseltemperatur (0x810) -->
+      <!-- Identisch mit Kesseltemperatur (0x802/0x810) -->
       <addr>2900</addr>
       <unit>UT</unit>
       <len>2</len>
@@ -280,12 +274,14 @@
       <unit>UT</unit>
       <description>Vorlaufsolltemperatur in Grad C</description>
     </command>
+    <!-- Nicht vorhanden! (Adresse ist Abgas-Temp-Sensor)
     <command name="getVitoTempRLIst" protocmd="getaddr">
       <addr>0808</addr>
       <len>2</len>
       <unit>UT</unit>
       <description>Ruecklauftemperatur in Grad C</description>
     </command>
+    -->
     <command name="getVitoTempRaumHK" protocmd="getaddr">
       <addr>0896</addr>
       <len>2</len>
@@ -293,7 +289,7 @@
       <description>Heizkreis Raumtemperatur in Grad C</description>
     </command>
     <command name='getVitoBetriebsartHK' protocmd='getaddr'>
-      <!-- Aktuelle Betriebsart der HK -->
+      <!-- Aktuelle Betriebsart des HK -->
       <addr>2500</addr>
       <len>1</len>
       <unit>ABA</unit>

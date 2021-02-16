@@ -47,10 +47,6 @@
         "type": "FLOAT",
         "command": "getVitoTempKesselIst"
       },
-      "Kesseltemperatur2": {
-        "type": "FLOAT",
-        "command": "getVitoTempKesselIst2"
-      },
       "Kesselsolltemperatur": {
         "type": "FLOAT",
         "command": "getVitoTempKesselSoll"
@@ -70,10 +66,6 @@
       "Vorlaufsolltemperatur": {
         "type": "FLOAT",
         "command": "getVitoTempVLSoll"
-      },
-      "Rücklauftemperatur": {
-        "type": "FLOAT",
-        "command": "getVitoTempRLIst"
       },
       "Abgastemperatur": {
         "type": "FLOAT",
