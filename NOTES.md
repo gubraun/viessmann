@@ -39,10 +39,3 @@
 
 #### Thermostate immer zu:
 - Nicht gut, da Brenner dann taktet
-
-## TODO:
-- 59: Absenktemp. WW bevor Speicher aufgeheizt wird
-- b0/b2: RT-Aufschaltung erst wenn HK optimal eingestellt 
-- !b5: RT Umwälzpumpen steuern
-
-
