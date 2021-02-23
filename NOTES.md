@@ -21,6 +21,8 @@
 * Lt. Heizungsbauer hat in Belgien jede WW-Zapfstelle hat eigenen Anschluß 
 * WW und Heizung sind separate Kreisläufe, über das Umschaltventil wird umgeschaltet
 
+## Thermostate/Takten
+
 #### Takten:
 - Wenn Rücklaufwasser zu heiß, schaltet Brenner ab (eine Art Notabschaltung)
 - Da aber weiterhin Heizanfrage vom Stellglied besteht, springt Brenner dann direkt wieder an
