@@ -29,10 +29,8 @@ Serviceanleitung für Vitodens enthält auch Infos über den Regler
 - Nicht gut, da Brenner dann taktet
 
 ## TODO:
-- RT korrekt von Vitotrol gemessen? Überprüfen mit zweitem Thermometer
 - 59: Absenktemp. WW bevor Speicher aufgeheizt wird
 - b0/b2: RT-Aufschaltung erst wenn HK optimal eingestellt 
 - !b5: RT Umwälzpumpen steuern
-- Soll-Temp. für red. Betrieb tief setzen (min. 3 Grad)
 
 
