@@ -20,12 +20,12 @@ Serviceanleitung für Vitodens enthält auch Infos über den Regler
 - Drosseln den Wasserdurchfluss wenn Temperatur erreicht
 - Kann man bei AT-Regelung auf gewünschte Temperatur stellen, d.h. einige Räume ggf. kälter machen
 
-### Wenn Thermostate immer offen:
+#### Wenn Thermostate immer offen:
 - Erster (näherer) Heizkörper hat immer max. Durchfluss und heizt den Raum ständig weiter auf
 - Andere Räume bekommen ggf. nicht genug Wärme
 - Nicht gut, da dann der hydraulische Abgleich nicht funktioniert
 
-### Thermostate immer zu:
+#### Thermostate immer zu:
 - Nicht gut, da Brenner dann taktet
 
 ## TODO:
