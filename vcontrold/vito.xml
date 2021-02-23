@@ -295,6 +295,10 @@
       <unit>ABA</unit>
       <description>Aktuelle Betriebsart des Heizkreises</description>
     </command>
+    <!-- Heizkreispumpe ist identisch mit Interner Pumpe (es gibt nur eine Pumpe)
+         Dieser Datenpunkt zeigt wenn die Pumpe läuft UND das Umschaltventil
+         auf "Heizen" steht - d.h. wenn die Interne Pumpe den Heizkreislauf
+         und nicht denn WW-Kreislauf bedient. -->
     <command name="getVitoStatusPumpeHK" protocmd="getaddr">
       <addr>2906</addr>
       <len>1</len>
@@ -303,7 +307,9 @@
       <description>Status Heizkreispumpe</description>
     </command>
     <command name="getVitoStatusPumpeIntern" protocmd="getaddr">
-      <!-- Nicht identisch mit HK-Pumpe! -->
+      <!-- Identische Pumpe aber dieser Wert zeigt den tatsächlichen Status
+           der Pumpe (nicht nur wenn die Pumpe den Heizkreislauf bedient) 
+      -->
       <description>Status Interne Pumpe</description>
       <addr>7660</addr>
       <len>1</len>
