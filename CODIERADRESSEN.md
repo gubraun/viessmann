@@ -9,7 +9,7 @@ Quelle: [Serviceanleitung Vitodens 200-W, Typ WB2C, 8/2011](https://www.viessman
 * [Solar/Gruppe "4"](#solargruppe-4)
 * [Heizkreis 1, Heizkreis 2, Heizkreis 3/Gruppe „5“](#heizkreis-1-heizkreis-2-heizkreis-3gruppe-5)
 
-## Interessant/TODO:
+### Interessant/TODO:
 - Codieradresse 59: Absenktemp. WW bevor Speicher aufgeheizt wird
 - Codieradresse b0/b2: RT-Aufschaltung erst wenn HK optimal eingestellt 
 - Codieradresse b5: RT Umwälzpumpen steuern
