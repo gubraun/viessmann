@@ -10,7 +10,20 @@ Master-Konfigurationsdateien für Vitotronic (HO1B) ("20CB") hier:
 * https://github.com/openv/openv/wiki/files/vito.xml
 * https://github.com/openv/openv/wiki/files/vcontrold.xml
 
-## Interessante Daten
+## Hinweise zu meiner Heizung
+
+* Es gibt einen Heizkreis
+* Keine Zirkulationsleitung und -pumpe vorhanden
+* Keine Speicherladepumpe vorhanden
+* Kein Mischer vorhanden
+* Nur eine (Umwälz-)Pumpe vorhanden
+  * Es gibt aber zwei Datenpunkte: Interne Pumpe und Heizkreispumpe. Dabei handelt es sich um dieselbe Pumpe, beim zweiten Datenpunkt (Heizkreispumpe) wird der Status aber nur als "an" angezeigt, wenn die Pumpe den Heizkreis (und nicht den WW-Kreislauf) bedient.
+* Kein RL-Temperatursensor vorhanden.
+* Kein separater VL-Temperatursensor (VL-Temperatur entspricht Kesseltemperatur)
+* Der Brenner is modulierend (d.h. es gibt keine Stufen)
+* Die Befüllung ist an den Zirkulationsanschluss der WW-Speichers angeschlossen (da dieser ja nicht anderweitig genutzt wird)
+
+## Interessante Datenpunkte zum Loggen
 - Aussentemp
 - Raumtemp ist/soll 0896/
 - Raumtemp red. soll
