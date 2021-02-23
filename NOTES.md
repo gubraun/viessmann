@@ -1,15 +1,31 @@
-# Notizen
+# Meine Heizung
 
-## Installation / Besonderheiten
-- Keine WW-Zirkulationspumpe und -leitung
-- Zirkulationsanschluss an WW-Speicher wurde missbraucht um Ausgleichsgefäß anzuschliessen (da der Anschluss im WW-Kreislauf liegt)
-- Befüllung der Heizung (Panzerschlauch) also vom WW-Kreislauf
-- Warmwasser: jede Zapfstelle hat eigenen Anschluß (in Belgien)
-- Umklar wie WW nach oben gelangt (im HWR nicht ersichtlich)
-- WW und Heizung sind separate Kreisläufe
-- Interne Umwälzpumpe ist wahrscheinlich nicht drehzahlgesteuert (erst ab 2012). Ist aber OK da besser wenn Pumpe mit hoher Leistung läuft, insbes. bei kleinem Kessel 
+## Geräte
+- Vitodens 200-W WB2C 19kW 
+- Vitotronic 200 Type HO1B
+- Vitocell 100-W Warmwasserspeicher
 
-Serviceanleitung für Vitodens enthält auch Infos über den Regler
+## Konfiguration
+Master-Konfigurationsdateien für Vitotronic (HO1B) ("20CB") hier:
+* https://github.com/openv/openv/wiki/files/vito.xml
+* https://github.com/openv/openv/wiki/files/vcontrold.xml
+
+## Hinweise zu meiner Heizung
+
+* Es gibt einen Heizkreis
+* Keine Zirkulationsleitung und -pumpe vorhanden
+* Keine Speicherladepumpe vorhanden
+* Kein Mischer vorhanden
+* Nur eine (Umwälz-)Pumpe vorhanden
+  * Es gibt aber zwei Datenpunkte: Interne Pumpe und Heizkreispumpe. Dabei handelt es sich um dieselbe Pumpe, beim zweiten Datenpunkt (Heizkreispumpe) wird der Status aber nur als "an" angezeigt, wenn die Pumpe den Heizkreis (und nicht den WW-Kreislauf) bedient.
+* Pumpe ist nicht drehzahlgesteuert (erst ab 2012)
+  * Ist aber OK, da eh besser wenn Pumpe mit hoher Leistung läuft, insbesondere bei kleinem Kessel
+* Kein RL-Temperatursensor vorhanden
+* Kein separater VL-Temperatursensor (VL-Temperatur entspricht Kesseltemperatur)
+* Der Brenner is modulierend (d.h. es gibt keine Stufen)
+* Die Befüllung und das Ausgleichsgefäß ist an den Zirkulationsanschluss angeschlossen (da der Anschluss im WW-Kreislauf liegt und nicht anderweitig genutzt wird)
+* Lt. Heizungsbauer hat in Belgien jede WW-Zapfstelle hat eigenen Anschluß 
+* WW und Heizung sind separate Kreisläufe, über das Umschaltventil wird umgeschaltet
 
 #### Takten:
 - Wenn Rücklaufwasser zu heiß, schaltet Brenner ab (eine Art Notabschaltung)
