@@ -1,6 +1,6 @@
 # Notizen
 
-Installation / Besonderheiten
+## Installation / Besonderheiten
 - Keine WW-Zirkulationspumpe und -leitung
 - Zirkulationsanschluss an WW-Speicher wurde missbraucht um Ausgleichsgefäß anzuschliessen (da der Anschluss im WW-Kreislauf liegt)
 - Befüllung der Heizung (Panzerschlauch) also vom WW-Kreislauf
@@ -11,24 +11,24 @@ Installation / Besonderheiten
 
 Serviceanleitung für Vitodens enthält auch Infos über den Regler
 
-Takten:
+### Takten:
 - Wenn Rücklaufwasser zu heiß, schaltet Brenner ab (eine Art Notabschaltung)
 - Da aber weiterhin Heizanfrage vom Stellglied besteht, springt Brenner dann direkt wieder an
 - Ursache: Temperatur des Wassers kann nicht abgegeben werden 
 
-Thermostate an Heizkörpern:
+### Thermostate an Heizkörpern:
 - Drosseln den Wasserdurchfluss wenn Temperatur erreicht
 - Kann man bei AT-Regelung auf gewünschte Temperatur stellen, d.h. einige Räume ggf. kälter machen
 
-Wenn Thermostate immer offen:
+### Wenn Thermostate immer offen:
 - Erster (näherer) Heizkörper hat immer max. Durchfluss und heizt den Raum ständig weiter auf
 - Andere Räume bekommen ggf. nicht genug Wärme
 - Nicht gut, da dann der hydraulische Abgleich nicht funktioniert
 
-Thermostate immer zu:
+### Thermostate immer zu:
 - Nicht gut, da Brenner dann taktet
 
-TODO:
+## TODO:
 - RT korrekt von Vitotrol gemessen? Überprüfen mit zweitem Thermometer
 - 59: Absenktemp. WW bevor Speicher aufgeheizt wird
 - b0/b2: RT-Aufschaltung erst wenn HK optimal eingestellt 
