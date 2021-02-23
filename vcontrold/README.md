@@ -4,6 +4,8 @@ Master-Konfigurationsdateien für Vitotronic (HO1B) ("20CB") hier:
 * https://github.com/openv/openv/wiki/files/vito.xml
 * https://github.com/openv/openv/wiki/files/vcontrold.xml
 
+Diese habe ich als Basis für meine Konfiguration (hier eingecheckt) verwendet.
+
 ## Interessante Datenpunkte zum Loggen
 - Aussentemp
 - Raumtemp ist/soll 0896/
