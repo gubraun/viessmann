@@ -11,12 +11,12 @@
 
 Serviceanleitung für Vitodens enthält auch Infos über den Regler
 
-### Takten:
+#### Takten:
 - Wenn Rücklaufwasser zu heiß, schaltet Brenner ab (eine Art Notabschaltung)
 - Da aber weiterhin Heizanfrage vom Stellglied besteht, springt Brenner dann direkt wieder an
 - Ursache: Temperatur des Wassers kann nicht abgegeben werden 
 
-### Thermostate an Heizkörpern:
+#### Thermostate an Heizkörpern:
 - Drosseln den Wasserdurchfluss wenn Temperatur erreicht
 - Kann man bei AT-Regelung auf gewünschte Temperatur stellen, d.h. einige Räume ggf. kälter machen
 
