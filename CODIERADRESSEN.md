@@ -1,6 +1,11 @@
 # Codieradressen
 Adresse (letzte Spalte) ist die Adresse über die der Datenpunkt mit vcontrol ansprechbar ist.
 
+### TODO:
+- 59: Absenktemp. WW bevor Speicher aufgeheizt wird
+- b0/b2: RT-Aufschaltung erst wenn HK optimal eingestellt 
+- !b5: RT Umwälzpumpen steuern
+
 Quelle: [Serviceanleitung Vitodens 200-W, Typ WB2C, 8/2011](https://www.viessmann.com/vires/product_documents/5604579VSA00001_1.PDF)
 
 * [Allgemein/Gruppe "1"](#allgemeingruppe-1)
@@ -8,7 +13,6 @@ Quelle: [Serviceanleitung Vitodens 200-W, Typ WB2C, 8/2011](https://www.viessman
 * [Warmwasser/Gruppe "3"](#warmwassergruppe-3)
 * [Solar/Gruppe "4"](#solargruppe-4)
 * [Heizkreis 1, Heizkreis 2, Heizkreis 3/Gruppe „5“](#heizkreis-1-heizkreis-2-heizkreis-3gruppe-5)
-
 
 ## Allgemein/Gruppe "1"
 ||Adresse|Werkseinst.|Aktueller Wert|Adresse*|
