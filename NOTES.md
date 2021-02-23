@@ -5,13 +5,7 @@
 - Vitotronic 200 Type HO1B
 - Vitocell 100-W Warmwasserspeicher
 
-## Konfiguration
-Master-Konfigurationsdateien für Vitotronic (HO1B) ("20CB") hier:
-* https://github.com/openv/openv/wiki/files/vito.xml
-* https://github.com/openv/openv/wiki/files/vcontrold.xml
-
-## Hinweise zu meiner Heizung
-
+## Besonderheiten/Hinweise
 * Es gibt einen Heizkreis
 * Keine Zirkulationsleitung und -pumpe vorhanden
 * Keine Speicherladepumpe vorhanden
