@@ -6,10 +6,13 @@
 - Ziel: mehr Wärme in Kinderzimmer 2
 
 ## 14.01.2026
-- Solltemperatur auf 22 Grad
-- Temperatur bei AT -5 ok, aber bei AT 5-10 zu warm 
-- Heizkurve von 1K / 0,9 auf 0K / 0,9 umgestellt
-- Thermostate an allen Heizkörpern auf 5
+- Status
+  - Solltemperatur auf 22 Grad
+  - Temperatur bei AT -5 ok, aber bei AT 5-10 zu warm
+  - Zu viele Brennerstarts bei Übergangstemperatur (14 vs. 5 bei kalten AT)
+- Änderung:
+  - Heizkurve von 1K / 0,9 auf 0K / 0,9 umgestellt
+  - Thermostate an allen Heizkörpern auf 5
 - Ziel:
   - Kinderzimmer 2 von 22.8 -> 22.0 (bei Übergangstemperaturen)
   - Wohnzimmer von 23.1 -> 22.0 (bei Übergangstemperaturen)
